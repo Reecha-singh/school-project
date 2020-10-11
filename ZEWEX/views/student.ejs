@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <link rel="stylesheet" href="../stylesheets/student.css">
+</head>
+<body>
+    <div id="main">
+    <form action="/studentpage" method="POST">
+        <div class="imgcontainer">
+          <img src="../images/student.png" alt="Avatar" class="avatar">
+          <h3>Student</h3>
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
